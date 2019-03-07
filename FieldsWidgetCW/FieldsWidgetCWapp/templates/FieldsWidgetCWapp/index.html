@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+{% block header %}
+<h1>Welcome Heroes and Villans!!!</h1>
+{% endblock header %}
+
+{% block content %}
+<p><a href="{% url 'form' %}">Click here to register</a></p>
+{% endblock content %}
+
+
+{% block footer %}
+<p>Gerren Gregory -2019 </p>
+{% endblock footer %}
+</body>
+</html>

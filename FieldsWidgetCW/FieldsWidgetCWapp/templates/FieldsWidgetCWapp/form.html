@@ -1,0 +1,18 @@
+{% extends "FieldsWidgetCWapp/index.html" %}
+
+{% block header %}
+<h1>Welcome Heroes and Villans!!!</h1>
+{% endblock header %}
+
+{% block content %}
+<form action="{% url 'thankyou' %}" method="post">
+    {% csrf_token %}
+    {{form.as_p}}
+    <button>Submit</button>
+</form>
+{% endblock content %}
+
+
+{% block footer %}
+<p>Gerren Gregory -2019 </p>
+{% endblock footer %}
